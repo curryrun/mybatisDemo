@@ -16,4 +16,37 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <java.version>1.8</java.version>
+        <!--<servlet.version>3.1.0</servlet.version>-->
+
+        <!--<fastjson.version>1.2.29</fastjson.version>-->
+        <!--<reflections.version>0.9.11</reflections.version>-->
+        <!--<guava.version>18.0</guava.version>-->
+        <!--<mybatis-spring-boot.version>1.2.0</mybatis-spring-boot.version>-->
+        <!--<spring-data-redis.version>1.8.1.RELEASE</spring-data-redis.version>-->
+        <!--<commons-lang3.version>3.5</commons-lang3.version>-->
+        <!--<spring-cloud.version>Camden.SR3</spring-cloud.version>-->
+        <!--<springfox.version>2.6.1</springfox.version>-->
+        <!--<spring-boot-swagger.version>1.4.1.RELEASE</spring-boot-swagger.version>-->
+        <!--<quartz.version>2.2.1</quartz.version>-->
+        <!--<springfox.version>2.6.1</springfox.version>-->
+        <!--<dozer.version>5.5.1</dozer.version>-->
+        <!--<api-common.version>0.0.1-SNAPSHOT</api-common.version>-->
+        <mybatis-pluse.version>3.1.0</mybatis-pluse.version>
+        <!--<druid.start.version>1.1.9</druid.start.version>-->
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus</artifactId>
+                <version>${mybatis-pluse.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
 </project>
